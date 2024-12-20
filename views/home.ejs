@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponics</title>
+</head>
+<body>
+   <h1>Hydroponics</h1> 
+    <h2>List of Crops</h2>
+    <div>
+        <a href="/addCrop">Add New Crop</a>
+    </div>
+        <ul>
+            <% for(let crop of crops){ %>
+                <li><a href="/addCrop/<%= crop._id%>"><%= crop.name%></a> </li> 
+            <% } %>
+        </ul>
+   
+</body>
+</html>
